@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+
+#top {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.top-inner {
+  width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top h1 img {
+  width: 130px;
+}
+
+/* gnb */
+.gnb ul {
+  display: flex;
+  gap: 50px;
+}
+
+.gnb ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.gnb ul li a:hover {
+  opacity: 0.6;
+}
+
+
+#main {
+  width: 100%;
+  padding-top: 90px;
+}
+
+
+/* ==========================
+  SWIPER
+========================== */
+.mySwiper {
+  width: 100%;
+  height: 900px;
+}
+
+.mySwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+
+/* ==========================
+  SECTION TITLE 공통
+========================== */
+.section-title {
+  width: 100%;
+  margin: 130px 0 70px;
+}
+
+.section-title .title-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.section-title .line {
+  width: 120px;
+  height: 2px;
+  background: #fff;
+  margin: 20px auto 0;
+}
+
+
+/* ==========================
+  PROFILE
+========================== */
+.profile {
+  width: 100%;
+}
+
+.profile-inner {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-inner h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.profile-inner .desc {
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 80px;
+}
+
+
+/* ==========================
+  MEMBER CARD
+========================== */
+.member-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.member {
+  width: 33.333%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.member-img { 
+  width: 100%;
+  height: 380px;
+}
+
+.member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.member-info {
+  padding: 25px 22px;
+  text-align: center;
+}
+
+.member-info h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.member-info h4 strong {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
+.member-info .position {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+
+/* ==========================
+  ACCORDION
+========================== */
+.accordion-section {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.accordion-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 클릭 가능하게 */
+.accordion-title {
+  cursor: pointer;
+}
+
+/* 기본 닫힘 */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+/* active 붙으면 열림 */
+.accordion-section.active .accordion-content {
+  max-height: 2500px;
+  padding: 35px 15px;
+}
+
+.accordion-content ul li {
+  font-size: 16px;
+  line-height: 1.8em;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.accordion-content ul li strong {
+  display: inline-block;
+  width: 130px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+
+/* ==========================
+  FOOTER
+========================== */
+#footer {
+  width: 100%;
+  margin-top: 200px;
+  padding: 70px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-inner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.footer-logo img {
+  width: 40px;
+}
+
+.footer-info {
+  flex: 1;
+}
+
+.footer-info .fnb ul {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-info .add address {
+  font-size: 13px;
+  font-style: normal;
+  opacity: 0.7;
+  line-height: 1.6em;
+}
+
+.footer-info .copy {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 12px;
+}
+
+.sns {
+  display: flex;
+  gap: 15px;
+}
+
+.sns img {
+  width: 15px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.sns img:hover {
+  opacity: 1;
+}
+
+
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+
+  .top-inner,
+  .section-title .title-wrap,
+  .profile-inner,
+  .accordion-inner,
+  .footer-inner {
+    width: 75%
+  }
+
+  .gnb ul {
+    gap: 30px;
+  }
+
+  .mySwiper {
+    height: 500px;
+  }
+
+  .section-title h2 {
+    font-size: 45px;
+  }
+
+  .member-wrap {
+    flex-wrap: wrap;
+  }
+
+
+  .member {
+    width: calc(50% - 15px);
+  }
+
+  .member-img {
+    height: 320px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info .fnb ul {
+    justify-content: center;
+  }
+
+  .sns {
+    justify-content: center;
+  }
+}
+
+
+/* 모바일 */
+@media (max-width: 768px) {
+
+  #top {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .top-inner {
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+  }
+
+  .gnb ul {
+    gap: 18px;
+  }
+
+  .gnb ul li a {
+    font-size: 15px;
+  }
+
+  #main {
+    padding-top: 140px;
+  }
+
+  .mySwiper {
+    height: 380px;
+  }
+
+  .section-title {
+    margin: 100px 0 50px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .profile-inner h3 {
+    font-size: 34px;
+  }
+
+  .profile-inner .desc {
+    font-size: 15px;
+    margin-bottom: 55px;
+  }
+
+  .member {
+    width: 100%;
+  }
+
+  .member-img {
+    height: 280px;
+  }
+
+  .accordion-content ul li {
+    font-size: 14px;
+  }
+
+  .accordion-content ul li strong {
+    width: 95px;
+    font-size: 13px;
+  }
+}
