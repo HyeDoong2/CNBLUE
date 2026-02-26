@@ -365,6 +365,7 @@
 
   .member-wrap {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
 
